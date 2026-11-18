@@ -1,0 +1,21 @@
+openai>=1.104.2,<3.0.0
+chromadb>=0.4.18
+tiktoken>=0.7.0,<1.0.0
+numpy>=2.0.0
+pandas>=2.0.0
+datasets>=2.14.0
+sentence-transformers>=2.2.0
+python-dotenv>=1.0.0
+pysbd>=0.3.4
+
+# RAGAS 0.3.1 импортирует ChatVertexAI из langchain-community.
+# В langchain-community 0.4 этого модуля уже нет, а LangChain 1.x
+# несовместим с веткой 0.3, поэтому верхние границы обязательны.
+pydantic>=2.0.0,<3.0.0
+langchain>=0.3.26,<1.0.0
+langchain-core>=0.3.78,<1.0.0
+langchain-openai>=0.3.35,<0.4.0
+langchain-community>=0.3.27,<0.4.0
+ragas==0.3.1
+pillow>=10.0.0
+
